@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../new/css/store.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <title>
+            Home
+        </title>
+    </head>
+    <body>
+        <div class="w3-sidebar w3-bar-block w3-card w3-animate-left scl" style="display:none" id="leftMenu">
+            <button onclick="closeLeftMenu()" class="w3-bar-item w4-button w3-large">Close &times;</button>
+            <br>
+            <div class="w3-display-container w3-hover-opacity" style="width:100%">
+              <img src="image/img_avatar2.png" class="w3-circle" alt="Avatar" style="width:100%">
+              <div class="w3-display-middle w3-display-hover w3-xlarge">
+                <button class="w4-button w3-black w3-round-xxlarge fz">Cho Kyi Han</button>
+              </div>
+            </div>
+            <hr>
+            <a href="#" class="w3-bar-item w4-button"><i class="material-icons">home</i>&nbsp;Home</a>
+
+                <hr>
+                <h5><b><i class="material-icons">school</i>&nbsp;Education</b></h5>
+                  <a href="#" class="w3-bar-item w5-button"><i class="material-icons">escalator_warning</i>&nbsp;Child Education</a>
+                  <a href="#" class="w3-bar-item w5-button"><i class="material-icons">family_restroom</i>&nbsp;Parenting</a>
+                  <a href="#" class="w3-bar-item w5-button"><i class="material-icons">auto_stories</i>&nbsp;Short Story</a>
+                
+                <hr>
+              
+                <h5><b><i class="material-icons">travel_explore</i>&nbsp;Tradition</b></h5>
+                  <a href="#" class="w3-bar-item w6-button"><i class="material-icons">broken_image</i>&nbsp;Culture</a>
+                  <a href="#" class="w3-bar-item w6-button"><i class="material-icons">lunch_dining</i>&nbsp;Fantastic Food</a>
+                  <a href="#" class="w3-bar-item w6-button"><i class="material-icons">houseboat</i>&nbsp;Living Style</a>
+                
+                <hr>
+              
+                <h5><b><i class="material-icons">science</i>&nbsp;Science & Research</b></h5>
+                  <a href="#" class="w3-bar-item w7-button"><i class="material-icons">psychology</i>&nbsp;Space & Galaxy</a>
+                  <a href="#" class="w3-bar-item w7-button"><i class="material-icons">edit_note</i>&nbsp;Scientific Facts</a>
+                  <a href="#" class="w3-bar-item w7-button"><i class="material-icons">pets</i>&nbsp;Researching Of Animals</a>
+                
+                <hr>
+             
+                <h5><b><i class="material-icons">collections_bookmark</i>&nbsp;Book Store</b></h5>
+                    <a href="#" class="w3-bar-item w8-button"><i class="material-icons">escalator_warning</i>&nbsp;Child Education</a>
+                    <a href="#" class="w3-bar-item w8-button"><i class="material-icons">family_restroom</i>&nbsp;Parenting</a>
+                    <a href="#" class="w3-bar-item w8-button"><i class="material-icons">auto_stories</i>&nbsp;Short Story</a>
+                    <a href="#" class="w3-bar-item w8-button"><i class="material-icons">broken_image</i>&nbsp;Culture</a>
+                    <a href="#" class="w3-bar-item w8-button"><i class="material-icons">lunch_dining</i>&nbsp;Fantastic Food</a>
+                    <a href="#" class="w3-bar-item w8-button"><i class="material-icons">houseboat</i>&nbsp;Living Style</a>
+                    <a href="#" class="w3-bar-item w8-button"><i class="material-icons">psychology</i>&nbsp;Space & Galaxy</a>
+                    <a href="#" class="w3-bar-item w8-button"><i class="material-icons">edit</i>&nbsp;Scientific Facts</a>
+                    <a href="#" class="w3-bar-item w8-button"><i class="material-icons">pets</i>&nbsp;Researching Of Animals</a>
+                    <hr>
+
+            <h5><b><i class="material-icons">help_center</i>&nbsp;Help Center?</b></h5>
+            <a href="#" class="w3-bar-item w4-button"><i class="material-icons">phone_in_talk</i>&nbsp;Our Service</a>
+            <a href="#" class="w3-bar-item w4-button"><i class="material-icons">manage_accounts</i>&nbsp;About Us</a>
+            <a href="#" class="w3-bar-item w4-button"><i class="material-icons">share</i>&nbsp;Contect Us</a>
+          </div>
+          
+          <div class="w3-sidebar w3-bar-block w3-card w3-animate-right" style="display:none;right:0;" id="rightMenu">
+            <button onclick="closeRightMenu()" class="w3-bar-item w4-button w3-large">Close &times;</button>
+            <li class="w3-bar">
+                <center>
+                <img src="image/img_avatar2.png" class="w3-bar-item w3-circle" style="width:85px">
+                </center>
+                <div class="w3-bar-item">
+                  <span class="w3-large">Cho Kyi Han</span>
+                  <br>
+                  <b class="title_size"><i>Developer</i></b>
+                  <hr>
+                </div>
+              </li>
+            <a href="#" class="w3-bar-item w4-button"><i class="material-icons">how_to_reg</i>&nbsp;My Profile</a>
+            <a href="#" class="w3-bar-item w4-button"><i class="material-icons">mail</i>&nbsp;Mail</a>
+            <a href="#" class="w3-bar-item w4-button"><i class="material-icons">settings</i>&nbsp;Setting</a>
+            <a href="#" class="w3-bar-item w4-button"><i class="material-icons">lock</i>&nbsp;Security & Privacy</a>
+            <a href="#" class="w3-bar-item w4-button"><i class="material-icons">help_center</i>&nbsp;Help Center</a>
+            <a href="#" class="w3-bar-item w4-button"><i class="material-icons">logout</i>&nbsp;Log Out</a>
+          </div>
+          
+          <div class="w3-teal w3-top w3-card-4">
+
+            <button class="w3-button w3-teal w3-xlarge w3-left" onclick="openLeftMenu()">&#9776;</button>
+            <button class="w3-button w3-teal w3-xlarge w3-right" onclick="openRightMenu()"><i class="material-icons">manage_accounts</i></button>
+            
+            <button class="w3-button w3-teal w3-right"><i class="material-icons">mail</i> <span class="w3-badge">3</span></button>
+            <button class="w3-button w3-teal w3-right"><i class="material-icons">notifications_active</i><span class="w3-badge">3</span></button>
+                 
+
+          </div>
+          <br><br><br> 
+          <div class="w3-display-container">
+            <img src="image/img_nature_wide.jpg" alt="Lights">
+            <div class="w3-display-topleft w3-container">Top Left</div>
+            <div class="w3-display-topright w3-container">Top Right</div>
+            <div class="w3-display-bottomleft w3-container">Bottom Left</div>
+            <div class="w3-display-bottomright w3-container">Bottom Right</div>
+            <div class="w3-display-left w3-container">Left</div>
+            <div class="w3-display-right w3-container">Right</div>
+            <div class="w3-display-middle">
+              <center>
+              <button class="w3-btn w3-round w3-black w3-card-4">Sing Up</button>
+              <button class="w3-btn w3-round w3-black w3-card-4">Sing In</button>
+              <br><hr>
+              <button class="w3-btn w3-round-large w3-black">Get Start</button>
+              </center>
+            </div>
+            <div class="w3-display-topmiddle w3-container">Top Middle</div>
+            <div class="w3-display-bottommiddle w3-container">Bottom Middle</div>
+          </div>
+           
+       
+          
+          <div class="w3-container w3-teal w3-bottom">
+            <p>My footer information</p>
+          </div>
+
+        <script>
+            function openLeftMenu() {
+              document.getElementById("leftMenu").style.display = "block";
+            }
+            
+            function closeLeftMenu() {
+              document.getElementById("leftMenu").style.display = "none";
+            }
+            
+            function openRightMenu() {
+              document.getElementById("rightMenu").style.display = "block";
+            }
+            
+            function closeRightMenu() {
+              document.getElementById("rightMenu").style.display = "none";
+            }
+            function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-opacity-off";
+}
+           
+            </script>
+    </body>
+</html>
