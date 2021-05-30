@@ -568,3 +568,36 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   cursor: pointer;
   white-space: nowrap;
 }
+
+.w3-in{
+  font-size:27px;
+}
+
+.w4-animate-right {
+  position: relative;
+  animation: animateright 0.99s;
+}
+.w5-animate-right {
+  position: relative;
+  animation: animateright 0.80s;
+}
+.w6-animate-right {
+  position: relative;
+  animation: animateright 0.60s;
+}
+.w7-animate-right {
+  position: relative;
+  animation: animateright 0.70s;
+}
+.w8-animate-right {
+  position: relative;
+  animation: animateright 0.30s;
+}
+.w5-animate-left {
+  position: relative;
+  animation: animateright 0.99s;
+}
+.w5-animate-bottom {
+  position: relative;
+  animation: animateright 0.99s;
+}
