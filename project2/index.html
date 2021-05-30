@@ -9,6 +9,20 @@
         </title>
     </head>
     <body>
+      <div class="w3-teal w3-top w3-card-4">
+
+        <button class="w3-button w3-teal w3-xlarge w3-left" onclick="openLeftMenu()">&#9776;</button>
+        <div class="w3-overlay" onclick="closeLeftMenu()" style="cursor:pointer" id="myLeftMenu"></div>
+
+        <button class="w3-button w3-teal w3-xlarge w3-right" onclick="openRightMenu()"><i class="material-icons">manage_accounts</i></button>
+        <div class="w3-overlay" onclick="closeRightMenu()" style="cursor:pointer" id="myRightMenu"></div>
+
+        <button class="w3-button w3-teal w3-right"><i class="material-icons">mail</i> <span class="w3-badge">3</span></button>
+        <button class="w3-button w3-teal w3-right"><i class="material-icons">notifications_active</i><span class="w3-badge">3</span></button>
+        
+             
+
+      </div>
         <div class="w3-sidebar w3-bar-block w3-card w3-animate-left scl" style="display:none" id="leftMenu">
             <button onclick="closeLeftMenu()" class="w3-bar-item w4-button w3-large">Close &times;</button>
             <br>
@@ -65,7 +79,7 @@
             <button onclick="closeRightMenu()" class="w3-bar-item w4-button w3-large">Close &times;</button>
             <li class="w3-bar">
                 <center>
-                <img src="image/img_avatar2.png" class="w3-bar-item w3-circle" style="width:85px">
+                <img src="image/img_avatar2.png" class="w3-bar-item w3-circle">
                 </center>
                 <div class="w3-bar-item">
                   <span class="w3-large">Cho Kyi Han</span>
@@ -73,7 +87,8 @@
                   <b class="title_size"><i>Developer</i></b>
                   <hr>
                 </div>
-              </li>
+              </li> 
+              <div id="google_translate_element">some</div>
             <a href="#" class="w3-bar-item w4-button"><i class="material-icons">how_to_reg</i>&nbsp;My Profile</a>
             <a href="#" class="w3-bar-item w4-button"><i class="material-icons">mail</i>&nbsp;Mail</a>
             <a href="#" class="w3-bar-item w4-button"><i class="material-icons">settings</i>&nbsp;Setting</a>
@@ -82,35 +97,82 @@
             <a href="#" class="w3-bar-item w4-button"><i class="material-icons">logout</i>&nbsp;Log Out</a>
           </div>
           
-          <div class="w3-teal w3-top w3-card-4">
-
-            <button class="w3-button w3-teal w3-xlarge w3-left" onclick="openLeftMenu()">&#9776;</button>
-            <button class="w3-button w3-teal w3-xlarge w3-right" onclick="openRightMenu()"><i class="material-icons">manage_accounts</i></button>
-            
-            <button class="w3-button w3-teal w3-right"><i class="material-icons">mail</i> <span class="w3-badge">3</span></button>
-            <button class="w3-button w3-teal w3-right"><i class="material-icons">notifications_active</i><span class="w3-badge">3</span></button>
-                 
-
-          </div>
-          <br><br><br> 
+          
+          <br>
           <div class="w3-display-container">
-            <img src="image/img_nature_wide.jpg" alt="Lights">
-            <div class="w3-display-topleft w3-container">Top Left</div>
-            <div class="w3-display-topright w3-container">Top Right</div>
-            <div class="w3-display-bottomleft w3-container">Bottom Left</div>
-            <div class="w3-display-bottomright w3-container">Bottom Right</div>
-            <div class="w3-display-left w3-container">Left</div>
-            <div class="w3-display-right w3-container">Right</div>
-            <div class="w3-display-middle">
-              <center>
-              <button class="w3-btn w3-round w3-black w3-card-4">Sing Up</button>
-              <button class="w3-btn w3-round w3-black w3-card-4">Sing In</button>
-              <br><hr>
-              <button class="w3-btn w3-round-large w3-black">Get Start</button>
-              </center>
+            
+      <!-- First Grid: Logo & About -->
+      <div class="w3-row ">
+      <div class="w3-half w3-teal w3-center w3-hover-shadow" style="height:600px">
+      <div class="w3-padding-64 w3-round-xxlarge">
+      <span class="w3-tag w3-in w4-animate-right">M</span>
+      <span class="w3-tag w3-in w3-red w5-animate-right">Y</span>
+      <span class="w3-tag w3-in w6-animate-right">C</span>
+      <span class="w3-tag w3-in w3-yellow w7-animate-right">H</span>
+      <span class="w3-tag w3-in w8-animate-right">A</span>
+      <span class="w3-tag w3-in w3-yellow w5-animate-right">N</span>
+      <span class="w3-tag w3-in w6-animate-right">N</span>
+      <span class="w3-tag w3-in w3-red w7-animate-right">E</span>
+      <span class="w3-tag w3-in w8-animate-right">L</span>
+      
+    </div>
+    <div class="w3-row">
+      <div class="w3-content w3-display-container w3-animate-fading">
+        <img class="mySlides" src="image/img_nature_wide.jpg" style="width:100%">
+        <img class="mySlides" src="image/img_snow_wide.jpg" style="width:100%">
+        <img class="mySlides" src="image/img_mountains_wide.jpg" style="width:100%">
+        <img class="mySlides" src="image/img_mountains_wide.jpg" style="width:100%">
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+      </div>
+    </div><br>
+    <div class="w3-row">
+      <div class="w3-col w3-center w3-hover-shadow w3-round-xxlarge w5-animate-bottom">
+        <div class="w3-card-4 w3-round-xxlarge w3-teal">
+          <div class="w3-row ">
+            <div class="w3-third w3-center">
+              <h6>MON</h6>
+              <button class="w3-btn w3-round w3-red w3-card-4 w5-animate-left">Sing Up</button>
             </div>
-            <div class="w3-display-topmiddle w3-container">Top Middle</div>
-            <div class="w3-display-bottommiddle w3-container">Bottom Middle</div>
+            <div class="w3-third w3-center">
+              <h6>TUE</h6>
+              <button class="w3-btn w3-round w3-yellow w3-card-4 w4-animate-right">Sing In</button>
+            </div>
+            <div class="w3-third w3-center w3-margin-bottom">
+              <h6>WED</h6>
+              <button class="w3-btn w3-round-large w3-red w3-animate-fading">Get Start</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="w3-half w3-container w3-hover-shadow w3-round-xxlarge" style="height:600px">
+    <div class="w3-padding-64 w3-center">
+      <h1>Touch With Us</h1>
+      <div class="w3-display w3-round-xxlarge">
+       
+        <div class="w3-row-padding w3-section w3-stretch">
+          <div class="w3-col">
+            <div class="w3-card-4">
+              <iframe style="width:100%;max-width:650px" height="300px" src="https://www.youtube.com/embed/2mGq3k_KEfY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              
+            </div>
+          </div>
+        </div>
+    
+      </div>
+      
+      <div class="w3-left-align w3-padding-large ">
+        <p>
+          Follow us to see more details on this page!
+
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
           </div>
            
        
@@ -118,43 +180,58 @@
           <div class="w3-container w3-teal w3-bottom">
             <p>My footer information</p>
           </div>
+          
 
-        <script>
+<script type="text/javascript">
             function openLeftMenu() {
               document.getElementById("leftMenu").style.display = "block";
+              document.getElementById("myLeftMenu").style.display= "block";
             }
             
             function closeLeftMenu() {
               document.getElementById("leftMenu").style.display = "none";
+              document.getElementById("myLeftMenu").style.display= "none";
             }
             
             function openRightMenu() {
               document.getElementById("rightMenu").style.display = "block";
+              document.getElementById("myRightMenu").style.display= "block";
             }
             
             function closeRightMenu() {
               document.getElementById("rightMenu").style.display = "none";
+              document.getElementById("myRightMenu").style.display = "none";
             }
-            function currentDiv(n) {
-  showDivs(slideIndex = n);
+            var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
 }
 
 function showDivs(n) {
   var i;
   var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
   if (n > x.length) {slideIndex = 1}
   if (n < 1) {slideIndex = x.length}
   for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
+    x[i].style.display = "none";  
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
-  }
-  x[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " w3-opacity-off";
+  x[slideIndex-1].style.display = "block";  
 }
+            
            
             </script>
+            
+<script type="text/javascript" 
+src="../new/js/js.js?cb=googleTranslateElementInit">
+</script>
+
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+  }
+  </script>
+          
     </body>
 </html>
